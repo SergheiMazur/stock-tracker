@@ -4,7 +4,7 @@ Stock 3.0
 
 ## Getting Started
 
-This is the finance tracker app
+This is the stock tracker app
 
 
 ### Installing
