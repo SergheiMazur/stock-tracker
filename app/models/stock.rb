@@ -1,4 +1,6 @@
 class Stock < ActiveRecord::Base
+  has_many :user_stocks
+  has_many :user, through: :user_stocks
   
   def self.new_from_lookup(ticker_symbol)
     begin 
