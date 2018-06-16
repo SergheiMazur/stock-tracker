@@ -1,5 +1,12 @@
+require "api_constraints"
 Rails.application.routes.draw do
   devise_for :users, :controllers => { :registrations => "user/registrations"}
+  
+  namespace :api, defaults: {format: 'json'} do
+    scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+      resources :user_stocks, only: [:index]
+    end
+  end
   
   resources :users, only: [:show]
   resources :friendships
