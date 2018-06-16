@@ -2,9 +2,11 @@ module Api
   module V1
     
     class UserStocksController < ApplicationController
+      
       respond_to :json
       def index
-        respond_with UserStock.all
+        @userStock = UserStock.paginate(page: params[:page], per_page: 4)
+        respond_with @userStock
       end
     end
     
