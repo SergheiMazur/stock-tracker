@@ -13,6 +13,7 @@ gem 'jquery-rails'
 gem 'devise-bootstrap-views'
 gem "stock_quote"
 gem 'will_paginate', '~> 3.1.0'
+gem 'simple_token_authentication', '~> 1.0'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
