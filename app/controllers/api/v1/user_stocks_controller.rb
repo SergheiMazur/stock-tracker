@@ -6,7 +6,7 @@ module Api
       respond_to :json
       def index
         @userStock = UserStock.paginate(page: params[:page], per_page: 4)
-        respond_with @userStock
+        respond_with current_user
       end
     end
     
