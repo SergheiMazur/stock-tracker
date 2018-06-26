@@ -2,6 +2,10 @@
 
 Stock 3.0
 
+## Heroku link
+
+https://stock-trackers.herokuapp.com
+
 ## Getting Started
 
 This is the stock tracker app
